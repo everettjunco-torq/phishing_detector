@@ -29,3 +29,6 @@ Repository = "https://github.com/everettjunco-torq/phishing_detector"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["phishing_detector*"]
+
+[tool.setuptools.package-data]
+phishing_detector = ["models/*.pkl"]
