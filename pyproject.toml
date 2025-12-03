@@ -10,9 +10,8 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "you@example.com"}
+    {name = "Everett Junco"}
 ]
-keywords = ["phishing", "email", "security", "machine-learning"]
 
 dependencies = [
     "pandas>=1.5.0",
@@ -23,23 +22,10 @@ dependencies = [
     "requests>=2.28.0",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.0.0",
-    "black>=22.0.0",
-    "flake8>=5.0.0",
-]
-
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/phishing-detector"
-Repository = "https://github.com/YOUR_USERNAME/phishing-detector"
-Issues = "https://github.com/YOUR_USERNAME/phishing-detector/issues"
+Homepage = "https://github.com/everettjunco-torq/phishing_detector"
+Repository = "https://github.com/everettjunco-torq/phishing_detector"
 
-[project.scripts]
-phishing-detect = "phishing_detector.cli:main"
-
-[tool.setuptools]
-packages = ["phishing_detector"]
-
-[tool.setuptools.package-data]
-phishing_detector = ["models/*.pkl"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["phishing_detector*"]
